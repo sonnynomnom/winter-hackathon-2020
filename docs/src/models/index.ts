@@ -1,11 +1,21 @@
-import { createStore, combineReducers, applyMiddleware } from 'redux';
-import thunk from 'redux-thunk';
+import { createStore, combineReducers, applyMiddleware } from "redux";
+import thunk from "redux-thunk";
+import { concepts, entries, languages } from "../reducers";
+import { IEntry } from "./entry";
+
+export interface IStore {
+  concepts: Record<string, string>;
+  languages: Record<string, string>;
+  entries: IEntry[];
+}
 
 const rootReducer = combineReducers({
-    // TODO: create
-})
+  concepts,
+  entries,
+  languages,
+});
 
-export const store = createStore<any, any, any, any>(
+export const store = createStore<IStore, any, any, any>(
   rootReducer,
   applyMiddleware(thunk)
 );

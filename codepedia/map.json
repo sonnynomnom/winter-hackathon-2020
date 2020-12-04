@@ -1,6 +1,6 @@
 {
   "concepts": {
-    "examplepPhrase": ["example"]
+    "example phrase": ["example"]
   },
   "languages": {
     "javascript": "js",
