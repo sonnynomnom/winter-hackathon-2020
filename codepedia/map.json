@@ -1,0 +1,11 @@
+{
+  "concepts": {
+    "examplepPhrase": ["example"]
+  },
+  "languages": {
+    "javascript": "js",
+    "python": "py",
+    "go": "go",
+    "golang": "go"
+  }
+}
