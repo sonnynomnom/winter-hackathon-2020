@@ -1,7 +1,6 @@
 import { MAP_LOADED } from "../actions/mapLoaded";
 import { Dispatch } from "redux";
-
-const URL_STARTER = "../../codepedia";
+import { URL_STARTER } from "./constants";
 
 export const loadMap = () => {
   return async (dispatch: Dispatch) => {
