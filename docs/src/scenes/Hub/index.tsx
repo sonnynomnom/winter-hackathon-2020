@@ -1,7 +1,8 @@
+import { RouteComponentProps } from "@reach/router";
 import React from "react";
 
-const Hub: React.FC = () => {
+export type HubProps = RouteComponentProps & {};
+
+export const Hub: React.FC<HubProps> = () => {
   return <>This is the Hub</>;
 };
-
-export default Hub;

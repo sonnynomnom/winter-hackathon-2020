@@ -1,7 +1,10 @@
+import { RouteComponentProps } from "@reach/router";
+import { IEntry } from "../../models/entry";
 import React from "react";
 
-const Entry: React.FC = () => {
+type EntryProps = RouteComponentProps & {
+  entry: IEntry;
+};
+export const Entry: React.FC<EntryProps> = () => {
   return <>This is an entry</>;
 };
-
-export default Entry;

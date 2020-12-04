@@ -1,10 +1,21 @@
-import React, { useEffect } from "react";
+import EntryCard from "./components/Entry.ts";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { selectConcepts } from "./selectors";
+import { selectConcepts, selectLanguages, selectEntries } from "./selectors";
 import { loadMap } from "./thunks/loadMap";
+import { RouteComponentProps } from "@reach/router";
+import { fontBase } from "@codecademy/gamut-styles";
+import styled from "@emotion/styled";
+import { IEntry } from "./models/entry";
+import { DevView } from "./scenes/Dev";
+import { Hub } from "./scenes/Hub";
+import { Entry } from "./scenes/Entry";
 
-export const App: React.FC = () => {
-  const concepts = useSelector(selectConcepts);
+const StyledApp = styled.div`
+  font-family: ${fontBase};
+`;
+export const App: React.FC<RouteComponentProps> = () => {
+  const [entry, setEntry] = useState<IEntry>();
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -12,12 +23,10 @@ export const App: React.FC = () => {
   }, []);
 
   return (
-    <>
-      {Object.keys(concepts).map((key) => (
-        <div>
-          {key}: {concepts[key]}
-        </div>
-      ))}
-    </>
+    <StyledApp>
+      <DevView path="/dev" default />
+      <Hub path="/" />
+      {entry && <Entry entry={entry} />}
+    </StyledApp>
   );
 };
