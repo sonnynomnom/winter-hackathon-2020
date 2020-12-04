@@ -9,7 +9,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <Router>
-        <App path="/" />
+        <App path="/" default />
       </Router>
     </Provider>
   </React.StrictMode>,

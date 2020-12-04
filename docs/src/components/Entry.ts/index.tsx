@@ -12,7 +12,6 @@ export type EntryCardProps = {
 };
 
 const EntryCard: React.FC<EntryCardProps> = ({ entry }) => {
-  console.log("rendering entry");
   return <Markdown text={entry.mdBody} />;
 };
 
