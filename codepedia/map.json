@@ -1,11 +1,12 @@
 {
   "concepts": {
     "Syntax": ["syntax"],
+    "Comments": ["comments"],
     "Variables": ["variables"],
     "Data Types": ["data_types"],
-    "Comments": ["comments"],
-    "Operators": ["syntax"],
+    "Operators": ["operators"],
     "Elements": ["elements"],
+    "Loops": ["loops"],
     "Attributes": ["attributes"],
     "Arrays": ["arrays"]
   },
