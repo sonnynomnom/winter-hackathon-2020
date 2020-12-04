@@ -32,14 +32,15 @@ module.exports = {
         use: ["style-loader", "css-loader", "sass-loader"],
       },
 
-      // svg loader
+      // font loader
       {
-        test: /\.svg$/,
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
         use: [
           {
-            loader: "svg-url-loader",
+            loader: "file-loader",
             options: {
-              limit: 10000,
+              name: "[name].[ext]",
+              outputPath: "fonts/",
             },
           },
         ],

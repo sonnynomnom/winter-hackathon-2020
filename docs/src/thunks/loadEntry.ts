@@ -12,7 +12,7 @@ export const loadEntry = (concept: string, language?: string) => {
     try {
       const resp = await fetch(url);
       const mdBody = await resp.text();
-      if (mdBody) {
+      if (resp.ok && mdBody) {
         dispatch({ type: ADD_ENTRY, concept, language, mdBody });
       }
     } catch (e) {}

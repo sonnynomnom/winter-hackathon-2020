@@ -1,4 +1,4 @@
-import EntryCard from "../../components/Entry.ts";
+import EntryCard from "../../components/Entry";
 import React from "react";
 import { useSelector } from "react-redux";
 import {

@@ -6,7 +6,7 @@ import { fontBase } from "@codecademy/gamut-styles";
 import styled from "@emotion/styled";
 import { IEntry } from "./models/entry";
 import { DevView } from "./scenes/Dev";
-// import { Hub } from "./scenes/Hub";
+import { Hub } from "./scenes/Hub";
 import { Entry } from "./scenes/Entry";
 
 const StyledApp = styled.div`
@@ -22,9 +22,11 @@ export const App: React.FC<RouteComponentProps> = () => {
 
   return (
     <StyledApp>
-      <DevView path="/" default />
-      {/* <Hub path="/" /> */}
-      {entry && <Entry entry={entry} />}
+      {entry ? (
+        <Entry entry={entry} path="/" onBack={() => setEntry(undefined)} />
+      ) : (
+        <Hub path="/" default onEntrySelect={setEntry} />
+      )}
     </StyledApp>
   );
 };
