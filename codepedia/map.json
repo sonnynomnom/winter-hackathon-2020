@@ -6,7 +6,8 @@
     "Comments": ["comments"],
     "Operators": ["syntax"],
     "Elements": ["elements"],
-    "Attributes": ["attributes"]
+    "Attributes": ["attributes"],
+    "Arrays": ["arrays"]
   },
   "languages": {
     "HTML": "html",
