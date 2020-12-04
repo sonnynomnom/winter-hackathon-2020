@@ -1,12 +1,22 @@
 {
   "concepts": {
-    "example phrase": ["example"],
-    "arrays": ["arrays"]
+    "Syntax": ["syntax"],
+    "Variables": ["variables"],
+    "Data Types": ["data_types"],
+    "Comments": ["comments"],
+    "Operators": ["syntax"],
+    "Elements": ["elements"],
+    "Attributes": ["attributes"],
+    "Arrays": ["arrays"]
   },
   "languages": {
-    "javascript": "js",
-    "python": "py",
-    "go": "go",
-    "golang": "go"
+    "HTML": "html",
+    "CSS": "css",
+    "JavaScript": "js",
+    "Python": "py",
+    "C++": "cpp",
+    "Java": "java",
+    "SQL": "sql",
+    "Go": "go"
   }
 }
