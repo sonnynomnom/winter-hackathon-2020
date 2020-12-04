@@ -5,10 +5,10 @@
     "Variables": ["variables"],
     "Data Types": ["data_types"],
     "Operators": ["operators"],
-    "Elements": ["elements"],
     "Loops": ["loops"],
-    "Attributes": ["attributes"],
-    "Arrays": ["arrays"]
+    "Arrays": ["arrays"],
+    "Elements": ["elements"],
+    "Attributes": ["attributes"]
   },
   "languages": {
     "HTML": "html",
@@ -17,7 +17,6 @@
     "Python": "py",
     "C++": "cpp",
     "Java": "java",
-    "SQL": "sql",
-    "Go": "go"
+    "SQL": "sql"
   }
 }
