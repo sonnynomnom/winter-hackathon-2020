@@ -34,7 +34,7 @@ Arithmetic operators are used with numeric values to perform common mathematical
 
 Assignment operators are used to assign values to variables:
 
-- `+=`	x += 3	x = x + 3	
+- `+=`
 - `-=`	
 - `*=`	
 - `/=`	
