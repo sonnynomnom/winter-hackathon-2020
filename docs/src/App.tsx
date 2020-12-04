@@ -20,8 +20,6 @@ export const App: React.FC<RouteComponentProps> = () => {
     dispatch(loadMap());
   }, []);
 
-  console.log("trying to render");
-
   return (
     <StyledApp>
       <DevView path="/" default />

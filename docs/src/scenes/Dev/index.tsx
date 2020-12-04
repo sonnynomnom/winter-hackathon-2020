@@ -20,20 +20,20 @@ export const DevView: React.FC<DevViewProps> = ({}) => {
       <h1>CodePedia</h1>
       <h2>Concepts</h2>
       {Object.keys(concepts).map((key) => (
-        <div>
+        <div key={`c-${key}`}>
           {key}: {concepts[key]}
         </div>
       ))}
 
       <h2>Languages</h2>
       {Object.keys(languages).map((key) => (
-        <div>
+        <div key={`l-${key}`}>
           {key}: {languages[key]}
         </div>
       ))}
       <h2>Entries</h2>
       {entries.map((e) => (
-        <EntryCard entry={e} />
+        <EntryCard key={`e-${e.concept}-${e.language}`} entry={e} />
       ))}
     </>
   );

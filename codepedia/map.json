@@ -1,6 +1,7 @@
 {
   "concepts": {
-    "example phrase": ["example"]
+    "example phrase": ["example"],
+    "arrays": ["arrays"]
   },
   "languages": {
     "javascript": "js",
