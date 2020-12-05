@@ -5,6 +5,7 @@
     "Variables": ["variables"],
     "Data Types": ["data_types"],
     "Operators": ["operators"],
+    "Conditionals": ["conditionals"],
     "Loops": ["loops"],
     "Arrays": ["arrays"],
     "Elements": ["elements"],
