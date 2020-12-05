@@ -1,64 +1,66 @@
 # Conditionals in JavaScript
 
-Use the if statement to specify a block of JavaScript code to be executed if a condition is true.
+## If Statement
+
+An `if` statement accepts an expression with a set of parentheses:
+
+- If the expression evaluates to a truthy value, then the code within its code body executes.
+- If the expression evaluates to a falsy value, its code body will not execute.
 
 ```js
-if (condition) {
-  //  block of code to be executed if the condition is true
+const isMailSent = true;
+ 
+if (isMailSent) {
+  console.log('Mail sent to recipient 💌');
 }
 ```
 
-Note that if is in lowercase letters. Uppercase letters (If or IF) will generate a JavaScript error.
+The output would be:
 
-Example
-Make a "Good day" greeting if the hour is less than 18:00:
+```bash
+Mail sent to recipient 💌
+```
 
+**Note:** `if` is in lowercase letters. Uppercase letters will generate a JavaScript error.
+
+## Else Statement
+
+An `else` block can be added to an if block or series of if-else if blocks. The else block will be executed only if the `if` condition fails.
+
+```js
+const isTaskCompleted = false;
+ 
+if (isTaskCompleted) {
+  console.log('Task completed');
+} else {
+  console.log('Task incomplete');
+}
+```
+
+If the `hour` is less than 18, create a "Good day" greeting, otherwise "Good evening":
+
+```js
 if (hour < 18) {
-  greeting = "Good day";
-}
-The result of greeting will be:
-
-Good day
-The else Statement
-Use the else statement to specify a block of code to be executed if the condition is false.
-
-if (condition) {
-  //  block of code to be executed if the condition is true
+  greeting = "Good day 🌤";
 } else {
-  //  block of code to be executed if the condition is false
+  greeting = "Good evening 🌙";
 }
-Example
-If the hour is less than 18, create a "Good day" greeting, otherwise "Good evening":
+```
 
-if (hour < 18) {
-  greeting = "Good day";
-} else {
-  greeting = "Good evening";
-}
-The result of greeting will be:
+## Else If Statement
 
-Good day
-The else if Statement
-Use the else if statement to specify a new condition if the first condition is false.
+After an initial `if` block, `else if` blocks can each check an additional condition. An optional `else` block can be added after the `else if` block(s) to run by default if none of the conditionals evaluated to truthy.
 
-Syntax
-if (condition1) {
-  //  block of code to be executed if condition1 is true
-} else if (condition2) {
-  //  block of code to be executed if the condition1 is false and condition2 is true
-} else {
-  //  block of code to be executed if the condition1 is false and condition2 is false
-}
-Example
-If time is less than 10:00, create a "Good morning" greeting, if not, but time is less than 20:00, create a "Good day" greeting, otherwise a "Good evening":
+If time is less than 10:00, create a "morning" greeting, if not, but time is less than 20:00, create a "day" greeting, otherwise a "Good evening":
 
+```js
 if (time < 10) {
-  greeting = "Good morning";
+  greeting = "Good morning 🌄";
 } else if (time < 20) {
-  greeting = "Good day";
+  greeting = "Good day 🌁";
 } else {
-  greeting = "Good evening";
+  greeting = "Good evening 🌉";
 }
-The result of greeting will be:
+```
 
-Good day
+Here, the result of greeting will be: `Good day 🌁`.
