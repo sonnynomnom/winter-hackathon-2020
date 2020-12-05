@@ -30,7 +30,7 @@ Arithmetic operators are used with numeric values to perform common mathematical
 | `**` | Exponentiation	| `x ** y` |	
 | `//` | Floor division | `x // y` |
 
-## Python Assignment Operators
+## Assignment Operators
 
 Assignment operators are used to assign values to variables:
 
@@ -40,7 +40,7 @@ Assignment operators are used to assign values to variables:
 - `/=`	
 - `%=`
 
-## Python Comparison Operators
+## Comparison Operators
 
 Comparison operators are used to compare two values:
 
@@ -53,7 +53,7 @@ Comparison operators are used to compare two values:
 | `<=` | Less than or equal to | `a <= b` |
 | `>=` | Greater than or equal to |	`a >= b` |
 
-## Python Logical Operators
+## Logical Operators
 
 Logical operators are used to combine conditional statements:
 

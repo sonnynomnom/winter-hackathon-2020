@@ -6,7 +6,7 @@ The assignment operator (`=`) assigns a value to a variable.
 var x = 10;
 ```
 
-## JavaScript Arithmetic Operators
+## Arithmetic Operators
 
 Arithmetic operators are used to perform arithmetic on numbers:
 
