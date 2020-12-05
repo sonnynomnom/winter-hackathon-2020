@@ -7,7 +7,14 @@ A comment is a piece of text within a program that is not executed. It can be us
 In JavaScript, single-line comments are created with two consecutive forward slashes `//`.
 
 ```js
-// This line will denote a comment
+// Prints 5 to the console
+console.log(5);
+```
+
+A single-line comment can also used to comment after a line of code:
+
+```js
+console.log(5); // Prints 5 
 ```
 
 ## Multi-line Comments
@@ -21,4 +28,10 @@ changed before deployment.
 */
  
 let baseUrl = 'localhost/taxwebapp/country';
+```
+
+This syntax can also be used to comment something out in the middle of a line of code:
+
+```js
+console.log(/* IGNORED! */ 5); // Still prints 5 
 ```
