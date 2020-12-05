@@ -8,6 +8,7 @@ Line comments are created using two consecutive forward slashes. The compiler ig
 
 ```rust
 // This line will denote a comment in Rust
+println!("Hello world!");
 ```
 
 ## Block Comments
