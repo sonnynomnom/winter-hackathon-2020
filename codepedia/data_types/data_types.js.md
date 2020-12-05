@@ -1,4 +1,4 @@
-# JavaScript Data Types
+# Data Types in JavaScript
 
 Data types are the classifications we give to the different kinds of data that we use in programming. In JavaScript, there are seven fundamental data types:
 
