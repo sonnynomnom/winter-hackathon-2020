@@ -17,6 +17,7 @@
     "Python": "py",
     "C++": "cpp",
     "Java": "java",
-    "SQL": "sql"
+    "SQL": "sql",
+    "Emojicode": "emojic"
   }
 }
