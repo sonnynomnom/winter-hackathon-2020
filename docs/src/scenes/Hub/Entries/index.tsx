@@ -12,6 +12,7 @@ import { IStore } from "../../../models";
 import { isValidForFilter } from "../../../helpers/filter";
 import { useNavigate } from "@reach/router";
 import { IEntry } from "../../../models/entry";
+import { genUrl } from "../../../helpers/genUrl";
 
 export type HubEntriesProps = {
   concept: string;
@@ -39,7 +40,7 @@ export const HubEntries: React.FC<HubEntriesProps> = ({
   // ==> Handle navigation
   const navigate = useNavigate();
   const onEntrySelect = useCallback((entry: IEntry) => {
-    navigate(`entries/${entry.concept}/${entry.language || ""}`);
+    navigate(genUrl(`entries/${entry.concept}/${entry.language || ""}`));
   }, []);
 
   return (

@@ -9,6 +9,7 @@ import {
 } from "../../../selectors";
 import { IStore } from "../../../models";
 import { IEntry } from "models/entry";
+import { genUrl } from "../../../helpers/genUrl";
 
 export type EntrySidebarProps = {
   entry: IEntry;
@@ -32,10 +33,10 @@ const EntrySidebar: React.FC<EntrySidebarProps> = ({
   const navTo = useCallback(
     (language?: string, concept?: string) => {
       if (!language && !concept) {
-        navigate("/");
+        navigate(genUrl(""));
         return;
       }
-      navigate(`/entries/${concept}/${language || ""}`);
+      navigate(genUrl(`entries/${concept}/${language || ""}`));
     },
     [entry]
   );

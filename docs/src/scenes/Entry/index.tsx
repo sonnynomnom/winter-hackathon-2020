@@ -1,4 +1,4 @@
-import { navigate, RouteComponentProps, useNavigate } from "@reach/router";
+import { RouteComponentProps } from "@reach/router";
 import React from "react";
 import { Container } from "@codecademy/gamut";
 import { Header } from "../../components/Header";
