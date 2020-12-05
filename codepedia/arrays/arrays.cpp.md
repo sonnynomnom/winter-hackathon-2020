@@ -4,13 +4,12 @@ Like a vector, an array is a data structure used in C++ to store a sequential co
 
 Being able to store multiple pieces of related information in the same structure is very useful when writing C++ programs.
 
-
 ## Creating an Array
 
 When creating an array, you have to keep two pieces of information in mind:
 
-* The type of data you want to store inside of it.
-* How many items you want it to be able to hold (its size).
+- The type of data you want to store inside of it.
+- How many items you want it to be able to hold (its size).
 
 We can create an array a lot like we create normal variables, by specifying the data type, giving it a descriptive name, and also specifying its size:
 
@@ -35,11 +34,11 @@ Like vectors, each element in an array is assigned a specific index starting at 
 ```cpp
 char vowels[] = {'a', 'e', 'i', 'o', 'u'};
 //      indexes:  0    1    2    3    4
- 
+
 std::cout << vowels[0]; // Prints: a
- 
+
 vowels[0] = 'r';
- 
+
 std::cout << vowels[0]; // Prints: r
 ```
 

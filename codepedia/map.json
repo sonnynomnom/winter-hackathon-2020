@@ -4,7 +4,7 @@
     "Variables": ["variables"],
     "Data Types": ["data_types"],
     "Comments": ["comments"],
-    "Operators": ["syntax"],
+    "Operators": ["operators"],
     "Elements": ["elements"],
     "Attributes": ["attributes"],
     "Arrays": ["arrays"]
