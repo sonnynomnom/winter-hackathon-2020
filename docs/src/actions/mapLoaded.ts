@@ -3,7 +3,7 @@ import type { Action } from "redux";
 export const MAP_LOADED = "MAP_LOADED";
 
 export interface IMap {
-  concepts: Record<string, string>;
+  concepts: Record<string, string[]>;
   languages: Record<string, string>;
 }
 

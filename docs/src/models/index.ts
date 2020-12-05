@@ -4,7 +4,7 @@ import { concepts, entries, languages } from "../reducers";
 import { IEntry } from "./entry";
 
 export interface IStore {
-  concepts: Record<string, string>;
+  concepts: Record<string, string[]>;
   languages: Record<string, string>;
   entries: IEntry[];
 }

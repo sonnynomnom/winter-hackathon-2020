@@ -1,6 +1,7 @@
 import React from "react";
 import { Heading } from "@codecademy/gamut";
 import { colors } from "@codecademy/gamut-styles";
+import styled from "@emotion/styled";
 
 export type HeaderProps = {
   path: string;
@@ -8,15 +9,15 @@ export type HeaderProps = {
 
 export const Header: React.FC<HeaderProps> = ({ path }) => {
   return (
-    <div
-      style={{
-        textAlign: "center",
-        borderBottom: "1px solid " + colors["gray-200"],
-      }}
-    >
+    <StyledHeader>
       <Heading as="h1" fontSize="sm">
         {path}
       </Heading>
-    </div>
+    </StyledHeader>
   );
 };
+
+const StyledHeader = styled.div`
+  text-align: center;
+  border-bottom: 1px solid ${colors["gray-200"]};
+`;

@@ -5,21 +5,13 @@ import { IEntry } from "../../models/entry";
 import React from "react";
 import { toTitleCase } from "../../helpers/title";
 
-const StyledGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 1rem;
-  grid-row-gap: 1rem;
-  margin-bottom: 2rem;
-`;
-
 export type EntryPreviewsProps = {
   title: string;
   entries: IEntry[];
   onEntrySelect: (e: IEntry) => void;
 };
 
-const EntryPreviews: React.FC<EntryPreviewsProps> = ({
+export const EntryPreviews: React.FC<EntryPreviewsProps> = ({
   title,
   entries,
   onEntrySelect,
@@ -28,17 +20,32 @@ const EntryPreviews: React.FC<EntryPreviewsProps> = ({
     return null;
   }
   return (
-    <Container column>
-      <Heading as="h2" fontSize="md">
-        {toTitleCase(title)}
-      </Heading>
-      <StyledGrid>
-        {entries.map((e) => (
-          <EntryPreview entry={e} onClick={() => onEntrySelect(e)} />
-        ))}
-      </StyledGrid>
-    </Container>
+    <>
+      <StyledColumn column>
+        <Heading as="h2" fontSize="md">
+          {toTitleCase(title)}
+        </Heading>
+
+        <StyledGrid>
+          {entries.map((e) => (
+            <EntryPreview
+              key={`epreview-${e.concept}-${e.language}`}
+              entry={e}
+              onClick={() => onEntrySelect(e)}
+            />
+          ))}
+        </StyledGrid>
+      </StyledColumn>
+    </>
   );
 };
 
-export default EntryPreviews;
+const StyledColumn = styled(Container)``;
+
+const StyledGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  margin: 2rem 0;
+`;

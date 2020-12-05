@@ -1,30 +1,53 @@
-import { RouteComponentProps } from "@reach/router";
-import { IEntry } from "../../models/entry";
+import { navigate, RouteComponentProps, useNavigate } from "@reach/router";
 import React from "react";
-import { Container, Heading, Markdown } from "@codecademy/gamut";
-import EntryCard from "../../components/EntryCard";
+import { Container } from "@codecademy/gamut";
 import { Header } from "../../components/Header";
-import NavSidebar from "../../components/Nav";
+import { useSelector } from "react-redux";
+import {
+  selectConceptName,
+  selectLanguageName,
+  selectEntry,
+} from "../../selectors";
+import { IStore } from "models";
+import { toTitleCase } from "../../helpers/title";
+import EntrySidebar from "./NavSidebar";
+import { EntryBody } from "./EntryBody";
 
 type EntryProps = RouteComponentProps & {
-  entry: IEntry;
-  onBack: () => void;
+  concept?: string;
+  language?: string;
 };
-export const Entry: React.FC<EntryProps> = ({ entry, onBack }) => {
+
+export const Entry: React.FC<EntryProps> = ({ concept, language }) => {
+  const entry = useSelector((s: IStore) =>
+    selectEntry(s, concept || "", language || "")
+  );
+  const conceptName = useSelector((s: IStore) =>
+    selectConceptName(s, entry?.concept || "")
+  );
+  const languageName = useSelector((s: IStore) =>
+    selectLanguageName(s, entry?.language || "")
+  );
+
+  if (!entry) {
+    return null;
+  }
+
+  const path = languageName
+    ? `${toTitleCase(conceptName)} > ${toTitleCase(languageName)}`
+    : `${toTitleCase(conceptName)}`;
+
   return (
     <Container column>
-      <Header path="Hub" />
+      <Header path={path} />
 
       <Container flex row grow={1}>
-        <NavSidebar
-          showBack
-          onBack={onBack}
-          onSelectConcept={() => null}
-          onSelectLanguage={() => null}
-          concept={entry.concept}
-          language={entry.language}
+        <EntrySidebar
+          entry={entry}
+          conceptName={conceptName}
+          languageName={languageName}
         />
-        <EntryCard entry={entry} />
+        <EntryBody entry={entry} />
       </Container>
     </Container>
   );
