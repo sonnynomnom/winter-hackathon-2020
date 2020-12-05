@@ -40,3 +40,21 @@ def write_a_book(character, setting, special_skill):
         setting + " practicing her " + 
         special_skill)
 ```
+
+## Returning Value from Function
+
+A `return` keyword is used to return a value from a Python function. The value returned from a function can be assigned to a variable which can then be used in the program.
+
+In the example, the function `check_leap_year()` returns a string which indicates if the passed parameter is a leap year or not.
+
+```py
+def check_leap_year(year): 
+  if year % 4 == 0:
+    return str(year) + " is a leap year."
+  else:
+    return str(year) + " is not a leap year."
+ 
+year_to_check = 2018
+returned_value = check_leap_year(year_to_check)
+print(returned_value) # 2018 is not a leap year.
+```
