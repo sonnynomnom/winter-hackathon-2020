@@ -2,6 +2,8 @@
 
 Describe coding concepts in a variety of ways
 
+Link: https://kipprice.github.io/winter-hackathon-2020/
+
 ## Adding a new concept
 
 1. Create a folder for the concept in `codepedia`
