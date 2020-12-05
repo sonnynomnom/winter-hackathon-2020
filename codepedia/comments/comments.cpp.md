@@ -1,5 +1,7 @@
 # C++ Comments
 
+A comment is a piece of text within a program that is not executed. It can be used to provide additional information to aid in understanding the code.
+
 ## Single-line Comments
 
 Single-line comments are created using two consecutive forward slashes. The compiler ignores any text after `//` on the same line.
