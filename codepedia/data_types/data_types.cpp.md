@@ -1,4 +1,4 @@
-# Data Types in C++
+# C++ Data Types
 
 ## `int` Type
 
