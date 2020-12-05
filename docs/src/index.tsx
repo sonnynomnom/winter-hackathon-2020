@@ -8,9 +8,7 @@ import { Router } from "@reach/router";
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <Router>
-        <App path="/" default />
-      </Router>
+      <App />
     </Provider>
   </React.StrictMode>,
 
