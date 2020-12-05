@@ -1,12 +1,10 @@
 # Comments in SQL
 
-Comments are used to explain sections of SQL statements, or to prevent execution of SQL statements.
+A comment is a piece of text within a program that is not executed. It can be used to provide additional information to aid in understanding the code, or to prevent execution of SQL statements.
 
-## Single Line Comments
+## Single-line Comments
 
-Single line comments start with `--`.
-
-Any text between `--` and the end of the line will be ignored (will not be executed).
+Single line comments start with `--`. Any text between `--` and the end of the line will be ignored (will not be executed).
 
 The following example uses a single-line comment as an explanation:
 
