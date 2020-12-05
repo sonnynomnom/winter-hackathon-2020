@@ -1,4 +1,4 @@
-# C++ Operators
+# Operators in C++
 
 ## Arithmetic Operators
 

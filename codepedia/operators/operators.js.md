@@ -1,4 +1,4 @@
-# JavaScript Operators
+# Operators JavaScript
 
 The assignment operator (`=`) assigns a value to a variable.
 
