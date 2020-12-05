@@ -8,6 +8,7 @@
     "Conditionals": ["conditionals"],
     "Loops": ["loops"],
     "Arrays": ["arrays"],
+    "Functions": ["functions"],
     "Elements": ["elements"],
     "Attributes": ["attributes"]
   },
