@@ -7,3 +7,7 @@ _Variables_ are used to store information to be referenced and manipulated in a 
 ## Assigning Value to Variables
 
 Naming variables is known as one of the most difficult tasks in computer programming. When you are naming variables, think hard about the names. Try your best to make sure that the name you assign your variable is accurately descriptive and understandable to another reader. Sometimes that other reader is yourself when you revisit a program that you wrote months or even years earlier.
+
+## Video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lLquWAIfu04" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -1,4 +1,4 @@
-# Emojicode Data Types
+# Data Types in Emojicode
 
 Here are a few basic data types:
 

@@ -1,4 +1,4 @@
-# Rust Data Types
+# Data Types in Rust
 
 Every variable, item, and value in a Rust program has a type. The type of a value defines the interpretation of the memory holding it and the operations that may be performed on the value.
 

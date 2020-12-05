@@ -1,4 +1,4 @@
-# Python Data Types
+# Data Types in Python
 
 In programming, data type is an important concept.
 
