@@ -58,3 +58,14 @@ Hello, World!
 The above program makes use of a `while` loop, which is being used to execute a set of programming statements enclosed within `{` and `}`. Here, the computer first checks whether the given condition, i.e., variable `a` is less than `5` or not and if it finds the condition is true, then the loop body is entered to execute the given statements.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wxds6MAtUQ0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Infiite Loops
+
+Avoid infinite loops. Make sure the condition in a loop eventually becomes false—otherwise, the loop will never terminate! The statements in the following while loop execute forever because the condition never becomes false:
+
+```pseudo
+// Infinite loops are bad!
+while (true) {
+  console.log('Hello, world!');
+}
+```
