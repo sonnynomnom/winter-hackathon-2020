@@ -1,13 +1,14 @@
 {
   "concepts": {
     "Syntax": ["syntax"],
+    "Comments": ["comments"],
     "Variables": ["variables"],
     "Data Types": ["data_types"],
-    "Comments": ["comments"],
-    "Operators": ["syntax"],
+    "Operators": ["operators"],
+    "Loops": ["loops"],
+    "Arrays": ["arrays"],
     "Elements": ["elements"],
-    "Attributes": ["attributes"],
-    "Arrays": ["arrays"]
+    "Attributes": ["attributes"]
   },
   "languages": {
     "HTML": "html",
@@ -16,7 +17,6 @@
     "Python": "py",
     "C++": "cpp",
     "Java": "java",
-    "SQL": "sql",
-    "Go": "go"
+    "SQL": "sql"
   }
 }
