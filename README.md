@@ -12,11 +12,9 @@ Describe coding concepts in a variety of ways
 ## Running locally
 
 1. `cd` to the `docs` folder
-1. Set the `IS_DEV` variable in `genUrl` to true
 1. Run `yarn start`
 
 ## Commiting development changes
 
 1. Run `yarn build` in the docs folder to generate the compiled files
-1. Set the `IS_DEV` variable in `genUrl` to false
 1. Commit all files that changed, including the `dist` folder

@@ -17,9 +17,8 @@ export const App: React.FC<RouteComponentProps> = () => {
   return (
     <StyledApp>
       <Router>
-        <Entry path="/entries/:concept/*language" />
-        <Entry path="winter-hackathon-2020/entries/:concept/*language" />
-        <Hub path="/" default />
+        <Entry path="/winter-hackathon-2020/entries/:concept/*language" />
+        <Hub path="/winter-hackathon-2020/" default />
       </Router>
     </StyledApp>
   );
