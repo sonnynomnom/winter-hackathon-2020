@@ -1,4 +1,4 @@
-# Rust Comments
+# Comments in Rust
 
 Comments in Rust code follow the general C++ style of line comments (`//`) and block comment forms. Nested block comments are supported.
 
