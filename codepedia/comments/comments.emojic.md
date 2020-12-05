@@ -2,6 +2,8 @@
 
 A comment is a piece of text within a program that is not executed. It can be used to provide additional information to aid in understanding the code.
 
+There are two types of comments in Emojicode.
+
 ## Single-line Comments
 
 In Emojicode, single-line comments are made with `💭`. Any text after the `💭` that is on the same line is not executed.
