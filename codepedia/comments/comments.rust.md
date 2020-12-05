@@ -1,6 +1,6 @@
 # Comments in Rust
 
-Comments in Rust code follow the general C++ style of line comments (`//`) and block comment forms. Nested block comments are supported.
+Comments in Rust code follow the general C++ style of line comments and block comments. Non-doc comments are interpreted as a form of whitespace.
 
 ## Line Comments
 
@@ -9,8 +9,6 @@ Line comments are created using two consecutive forward slashes. The compiler ig
 ```rust
 // This line will denote a comment in Rust
 ```
-
-Non-doc comments are interpreted as a form of whitespace.
 
 ## Block Comments
 
@@ -23,15 +21,15 @@ None of it is going to run!
 */
 ```
 
-Non-doc comments are interpreted as a form of whitespace.
+Nested block comments are supported.
 
 ## Doc Comments
 
 Line doc comments beginning with exactly three slashes (`///`), and block doc comments beginning with `/**` and `*/` to end. Both inner doc comments, are interpreted as a special syntax for doc attributes. That is, they are equivalent to writing `#[doc="..."]` around the body of the comment.
 
 ```rust
- /// Foo
- ```
+/// Foo
+```
 
  ```rust
 /**

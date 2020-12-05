@@ -1,4 +1,4 @@
-# Emojicode Operators
+# Operators in Emojicode
 
 ## Arithmetic Operations
 
