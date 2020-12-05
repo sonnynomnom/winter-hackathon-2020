@@ -1,13 +1,14 @@
 {
   "concepts": {
     "Syntax": ["syntax"],
+    "Comments": ["comments"],
     "Variables": ["variables"],
     "Data Types": ["data_types"],
-    "Comments": ["comments"],
     "Operators": ["operators"],
+    "Loops": ["loops"],
+    "Arrays": ["arrays"],
     "Elements": ["elements"],
-    "Attributes": ["attributes"],
-    "Arrays": ["arrays"]
+    "Attributes": ["attributes"]
   },
   "languages": {
     "HTML": "html",
@@ -17,6 +18,6 @@
     "C++": "cpp",
     "Java": "java",
     "SQL": "sql",
-    "Go": "go"
+    "Emojicode": "emojic"
   }
 }
