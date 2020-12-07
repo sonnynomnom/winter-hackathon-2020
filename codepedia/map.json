@@ -10,7 +10,8 @@
     "Arrays": ["arrays"],
     "Functions": ["functions"],
     "Elements": ["elements"],
-    "Attributes": ["attributes"]
+    "Attributes": ["attributes"],
+    "Headings": ["headings"]
   },
   "languages": {
     "HTML": "html",

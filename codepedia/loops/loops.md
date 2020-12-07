@@ -1,4 +1,4 @@
-# Loops
+# Loops Explained
 
 Let's consider a situation when you want to print `Hello, World!` five times.
 
