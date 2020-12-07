@@ -1,6 +1,5 @@
 {
   "concepts": {
-    "Syntax": ["syntax"],
     "Comments": ["comments"],
     "Variables": ["variables"],
     "Data Types": ["data_types"],
