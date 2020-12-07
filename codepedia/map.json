@@ -11,7 +11,8 @@
     "Elements": ["elements"],
     "Attributes": ["attributes"],
     "Headings": ["headings"],
-    "Paragraphs": ["paragraphs"]
+    "Paragraphs": ["paragraphs"],
+    "Formatting": ["formatting"]
   },
   "languages": {
     "HTML": "html",
