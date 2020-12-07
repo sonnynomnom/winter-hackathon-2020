@@ -10,7 +10,8 @@
     "Functions": ["functions"],
     "Elements": ["elements"],
     "Attributes": ["attributes"],
-    "Headings": ["headings"]
+    "Headings": ["headings"],
+    "Paragraphs": ["paragraphs"]
   },
   "languages": {
     "HTML": "html",
